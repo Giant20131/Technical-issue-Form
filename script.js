@@ -3,12 +3,12 @@
 // =========================================
 
 // User credentials
-const userId = "podar#ky";
+const userId = "teacher";
 const userPass = "podar1234";
 
 // Admin credentials
-const adminId = "admin";
-const adminPass = "admin1234";
+const adminId = "principal";
+const adminPass = "podar_pr1234";
 
 // Password for downloading TXT files
 const downloadPass = "download123";
@@ -176,3 +176,4 @@ Issue: ${issue.text}
 
   renderAdminIssues();
 }
+
