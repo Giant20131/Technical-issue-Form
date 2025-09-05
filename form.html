@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard - Technical Issue Form</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script>
+    // Only allow user access
+    if (sessionStorage.getItem("loggedIn") !== "user") {
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Technical Issue Form</h2>
+    <form id="issueForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required />
+
+      <label for="classSelect">Select Class</label>
+      <select id="classSelect" required>
+        <option value="">--Select--</option>
+        <option value="1A">Class 1A</option>
+        <option value="1B">Class 1B</option>
+        <option value="2A">Class 2A</option>
+        <option value="2B">Class 2B</option>
+        <option value="3A">Class 3A</option>
+        <option value="3B">Class 3B</option>
+        <option value="4A">Class 4A</option>
+        <option value="4B">Class 4B</option>
+        <option value="5A">Class 5A</option>
+        <option value="5B">Class 5B</option>
+        <option value="6A">Class 6A</option>
+        <option value="6B">Class 6B</option>
+        <option value="7A">Class 7A</option>
+        <option value="7B">Class 7B</option>
+        <option value="8A">Class 8A</option>
+        <option value="8B">Class 8B</option>
+        <option value="9A">Class 9A</option>
+        <option value="9B">Class 9B</option>
+        <option value="10A">Class 10A</option>
+        <option value="10B">Class 10B</option>
+      </select>
+
+      <label for="date">Date of Issue</label>
+      <input type="date" id="date" required />
+
+      <label for="issue">Describe the Issue</label>
+      <textarea id="issue" required></textarea>
+
+      <button type="submit">Submit Issue</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
